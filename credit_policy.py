@@ -102,6 +102,8 @@ base_filename = "credit_policy_plot"
 output_folder = "output"
 counter = 1
 
+os.makedirs(output_folder, exist_ok=True)
+
 while True:
     filename = os.path.join(output_folder, f"{base_filename}{counter}.png")
     if not os.path.exists(filename):
